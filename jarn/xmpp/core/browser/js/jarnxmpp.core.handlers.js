@@ -335,6 +335,7 @@ $(document).bind('jarnxmpp.disconnecting', function () {
 
 $(document).ready(function () {
 
+    $ = jQuery.noConflict();
     $.getJSON(portal_url + '/@@xmpp-loader', function (data) {
         jarnxmpp.BOSH_SERVICE = data.BOSH_SERVICE;
         jarnxmpp.pubsub_jid = data.pubsub_jid;
